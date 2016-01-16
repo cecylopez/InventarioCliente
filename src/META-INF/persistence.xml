@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="InvetarioClient" transaction-type="RESOURCE_LOCAL">
+		<class>sv.com.foobar.inventario.entities.Asignacionitem</class>
+		<class>sv.com.foobar.inventario.entities.Categoria</class>
+		<class>sv.com.foobar.inventario.entities.Departamento</class>
+		<class>sv.com.foobar.inventario.entities.Item</class>
+		<class>sv.com.foobar.inventario.entities.Movimientoitem</class>
+		<class>sv.com.foobar.inventario.entities.Rol</class>
+		<class>sv.com.foobar.inventario.entities.Solicitudasignacion</class>
+		<class>sv.com.foobar.inventario.entities.Solicitudmovimiento</class>
+		<class>sv.com.foobar.inventario.entities.Tipomovimiento</class>
+		<class>sv.com.foobar.inventario.entities.Usuario</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/inventario"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="javax.persistence.jdbc.password" value="root"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+		</properties>
+	</persistence-unit>
+</persistence>
